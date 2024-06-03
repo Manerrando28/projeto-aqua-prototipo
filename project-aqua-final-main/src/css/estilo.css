@@ -1,0 +1,124 @@
+/* Variáveis */
+:root {
+    /* Suas variáveis CSS aqui */
+}
+
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    min-height: 100vh;
+    line-height: 1.5;
+    background-image: var(--bg-color-gradient);
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    width: 90px;
+    height: 80px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color1);
+}
+
+.nav-menu li a:hover {
+    border-bottom: 2px solid var(--text-color5);
+    box-shadow: 1px 2px 4px var(--bg-color5);
+}
+
+.btn {
+    border: 1px solid var(--text-color4);
+    padding: 0.8rem 3rem;
+    border-radius: 3rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--text-color2);
+    color: var(--text-color1);
+}
+
+/* Conteúdo */
+.home,
+.solution,
+.aqua-info,
+.infos-info {
+    width: 100%; /* Ocupa toda a largura da tela */
+    padding: 5rem 0; /* Espaçamento interno */
+    text-align: center;
+}
+
+.home-text h1,
+.solution-text h1,
+.aqua-info-text h1,
+.infos-info-text h1 {
+    margin-top: 50px;
+    line-height: 4rem;
+    text-transform: uppercase;
+    color: var(--text-color5);
+}
+
+.titulo1,
+.titulo2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.home-text p,
+.solution-text p,
+.aqua-info-text p,
+.infos-info-text p {
+    width: 75%;
+    font-size: 2rem;
+    margin: 3rem auto 4rem;
+}
+
+.btnCorrer {
+    color: var(--text-color5);
+    background-color: transparent;
+    width: 170px;
+    height: 60px;
+    border-radius: 1rem;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.btnCorrer:hover {
+    background-color: var(--bg-color1);
+    color: var(--text-color1);
+    box-shadow: 10px 10px 4px var(--text-color1);
+}
+
+/* Imagens */
+.home-image,
+.solution-image {
+    width: 100%; /* Ocupa toda a largura da tela */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 30px;
+}
